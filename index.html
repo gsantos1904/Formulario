@@ -1,0 +1,155 @@
+				<!DOCTYPE html>
+				<html>
+				<head>
+					<meta charset="utf-8" />
+					<title>Formulario de clientes</title>
+				</head>
+				<body>
+				<link href="formulario.css" rel="stylesheet">
+				<script type="text/javascript" src="formulario.js"></script>
+				
+				<form method="get" action="." name="meuForm" method="post" id="formulario">
+					<div class="box">
+						<h1>Formulario de Clientes: </h1></br>
+						
+						
+						
+						<legend>
+							<h3>Dados Pessoais</h3>
+						</legend>
+
+						<label>
+							<span>Nome Completo</span>
+							<input type="text" class="input_text" name="nome" id="name" required="name"/>
+
+						</label>
+						
+						<label>
+							<span>CPF</span>
+							<input type="text" class="input_text" name="cpf" id="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required title="Digite um CPF no formato: xxx.xxx.xxx-xx"><button><input class="botao"type="submit" value="Verificar" ></button>
+													
+						</label>
+						
+						<label>
+							<span>Data de Nascimento</span>
+							<input type="date" class="input_text" name="nascimento" id="nascimento"/>
+
+						</label>
+						
+						<label>
+							<span>Telefone</span>
+							<input type="tel" class="input_text" name="telefone" id="teefone" placeholder="(xx) xxxxx-xxxx">
+
+						</label>
+						
+						<label>
+							<span>Celular</span>
+							<input type="tel" class="input_text" name="celular" id="celular" required placeholder="(xx) xxxxx-xxxx">
+
+						</label>
+						
+												
+						<label>
+							<span>Email</span>
+							<input type="text" class="input_text" name="email" id="name"/>
+
+						</label><br//>
+
+
+
+												
+						<legend>
+							<h3>Dados de Endereço</h3>
+						</legend>
+						
+						<label>
+							<span>CEP:</span>
+							<input type="text" class="input_text" name="cep" id="endereço" value="" size="10" maxlength="9" onblur="pesquisacep(this.value);" /></label>
+         						
+						</label>
+						
+						<label>
+							<span>Rua:</span>
+							<input type="text" class="input_text" name="rua" id="rua">
+
+						</label>
+						
+						<label>
+							<span>Bairro:</span>
+							<input type="text" class="input_text" name="bairro" id="bairro">
+
+						</label>
+						
+						<label>
+							<span>Cidade:</span>
+							<input type="text" class="input_text" name="cidade" id="cidade">
+
+						</label>
+						
+						<label>
+							<span>Estado:</span>
+							<input type="text" class="input_text" name="estado" id="uf">
+
+						</label>
+						
+						<legend>
+							<h3>Informes Rendimentos:</h3>
+						</legend>
+						
+						<label>
+							<span>Empresa:</span>
+							<input type="text" class="input_text" name="empresa" id="empresa1"/>
+
+						</label>
+						
+						<label>
+							<span>Empresa:</span>
+							<input type="text" class="input_text" name="empresa2" id="empresa2"/>
+
+						</label>
+						
+						<label>
+							<span>Empresa:</span>
+							<input type="text" class="input_text" name="empresa3" id="empresa3"/>
+
+						</label>
+						
+							<span>Recebimento de Aluguel?</span>
+							
+						<div class="gender">	
+							<label for="sim" class="radio"> Sim <input type="radio" value="sim" id="male" name="gender" required  /></label>
+							<label for="nao" class="radio"> Não <input type="radio" value="nao" id="male" name="gender" required /></label>		
+						</div>
+					
+							<p>Banco para Crédito/Debito</p>
+					
+					<div class="banco">
+						<label>
+						<span>Número da conta:</span><input type="text" class="input_text" placeholder="" name="conta" id="ContaB" value="0000" required onkeypress="return FormataDado(this,12,1,event);"/>
+						</label>
+					</div>
+						
+						<p>Pagamento</p>
+						<div class="gender">								
+							<label for="sim" class="radio"> Dinheiro <input type="radio" value="dinheiro" id="dinheiro" name="gender" required /></label>
+							<label for="nao" class="radio"> Cartão <input type="radio" value="cartao" id="cartao" name="gender" required /></label>
+							<label for="nao" class="radio"> Cheque <input type="radio" value="cheque" id="cheque" name="gender" required /></label>
+							<label for="nao" class="radio"> Pix <input type="radio" value="pix" id="pix" name="gender" required /></label>	
+						</div>
+					
+						<p>Possui dependentes ?</p>
+						
+						<div class="gender">	
+							
+							<label for="sim" class="radio"> Sim <input type="radio" value="sim" id="sim" name="gender" required /></label>
+							<label for="nao" class="radio"> Não <input type="radio" value="nao" id="nao" name="gender" required /></label>	
+									
+						</div>
+					
+					   <input type="submit" name="submit" value="submit">
+					
+				</form>
+				</body>
+				</html>
+				
+				
